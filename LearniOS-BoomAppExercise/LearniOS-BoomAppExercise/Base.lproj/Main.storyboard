@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LearniOS_BoomAppExercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="BlueBomb" translatesAutoresizingMaskIntoConstraints="NO" id="6LV-mG-qrV">
+                                <rect key="frame" x="60" y="205" width="70" height="60"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="RedBomb" translatesAutoresizingMaskIntoConstraints="NO" id="rBR-er-GsM">
+                                <rect key="frame" x="190" y="205" width="70" height="60"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNT-a2-o4O">
+                                <rect key="frame" x="60" y="305" width="66" height="30"/>
+                                <state key="normal" title="Hide Blue"/>
+                                <connections>
+                                    <action selector="btnBlueTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A4P-SY-RYK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95x-hA-Hwb">
+                                <rect key="frame" x="191" y="305" width="63" height="30"/>
+                                <state key="normal" title="Hide Red"/>
+                                <connections>
+                                    <action selector="btnRedTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b3d-Td-Wq7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rNT-a2-o4O" firstAttribute="centerX" secondItem="6LV-mG-qrV" secondAttribute="centerX" id="0Oo-sH-Qhn"/>
+                            <constraint firstItem="6LV-mG-qrV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="209" id="5wR-Ud-IqH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="95x-hA-Hwb" secondAttribute="trailing" constant="52" id="Bjr-ec-0XO"/>
+                            <constraint firstItem="rNT-a2-o4O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="Eml-ei-NxZ"/>
+                            <constraint firstItem="95x-hA-Hwb" firstAttribute="centerX" secondItem="rBR-er-GsM" secondAttribute="centerX" id="G5s-AB-Zd3"/>
+                            <constraint firstItem="95x-hA-Hwb" firstAttribute="top" secondItem="rBR-er-GsM" secondAttribute="bottom" constant="40" id="Kvc-Dq-EVU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rBR-er-GsM" secondAttribute="trailing" constant="40" id="LBz-Vu-lrR"/>
+                            <constraint firstItem="rBR-er-GsM" firstAttribute="leading" secondItem="6LV-mG-qrV" secondAttribute="trailing" constant="60" id="LNi-Hr-c1T"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rNT-a2-o4O" secondAttribute="bottom" constant="233" id="OXo-St-WS6"/>
+                            <constraint firstItem="rBR-er-GsM" firstAttribute="width" secondItem="6LV-mG-qrV" secondAttribute="width" id="SmX-H3-k96"/>
+                            <constraint firstItem="95x-hA-Hwb" firstAttribute="leading" secondItem="rNT-a2-o4O" secondAttribute="trailing" constant="59" id="TX6-bB-cmt"/>
+                            <constraint firstItem="6LV-mG-qrV" firstAttribute="centerY" secondItem="rBR-er-GsM" secondAttribute="centerY" id="oAF-NR-LsX"/>
+                            <constraint firstItem="rNT-a2-o4O" firstAttribute="top" secondItem="6LV-mG-qrV" secondAttribute="bottom" constant="40" id="sbP-2G-bhL"/>
+                            <constraint firstItem="6LV-mG-qrV" firstAttribute="height" secondItem="rBR-er-GsM" secondAttribute="height" id="tEe-XS-F1m"/>
+                            <constraint firstItem="95x-hA-Hwb" firstAttribute="centerY" secondItem="rNT-a2-o4O" secondAttribute="centerY" id="wwI-8j-kI2"/>
+                            <constraint firstItem="6LV-mG-qrV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="zGg-lT-Huo"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="btnBlue" destination="rNT-a2-o4O" id="scR-0P-1i6"/>
+                        <outlet property="btnRed" destination="95x-hA-Hwb" id="ukf-Cc-srx"/>
+                        <outlet property="imgBlueBomb" destination="6LV-mG-qrV" id="4b6-VK-4OP"/>
+                        <outlet property="imgRedBomb" destination="rBR-er-GsM" id="4fR-4A-2gy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="337"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BlueBomb" width="569" height="600"/>
+        <image name="RedBomb" width="569" height="600"/>
+    </resources>
+</document>
